@@ -27,7 +27,9 @@ const Services = () => {
           <div className="arrow"></div>
           <div className="service-box">
             <h3>Impact Tracking Tools:</h3>
-            <p>Features to monitor and report on project outcomes in real-time.</p>
+            <p>
+              Features to monitor and report on project outcomes in real-time.
+            </p>
           </div>
         </div>
         <div className="service">
@@ -35,8 +37,8 @@ const Services = () => {
           <div className="service-box">
             <h3>Consultancy:</h3>
             <p>
-              Expert guidance on CSR strategy development, compliance, and impact
-              measurement.
+              Expert guidance on CSR strategy development, compliance, and
+              impact measurement.
             </p>
           </div>
         </div>

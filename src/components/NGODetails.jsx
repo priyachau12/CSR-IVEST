@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/NGODetails.css";
+import "../Styles/NGODetails.css";
 
 const NGODetails = ({ ngo, onBack }) => {
   if (!ngo) return <p>Please select an NGO to view details.</p>;
@@ -8,11 +8,19 @@ const NGODetails = ({ ngo, onBack }) => {
 
   return (
     <div className="ngo-details-container">
-      <button className="back-button" onClick={onBack}>Back to List</button>
+      <button className="back-button" onClick={onBack}>
+        Back to List
+      </button>
       <h2>{ngo.name}</h2>
-      <p><strong>Address:</strong> {ngo.address}</p>
-      <p><strong>Funding Amount:</strong> ₹{ngo.fundingAmount.toLocaleString()}</p>
-      <p><strong>Commission (3%):</strong> ₹{commission}</p>
+      <p>
+        <strong>Address:</strong> {ngo.address}
+      </p>
+      <p>
+        <strong>Funding Amount:</strong> ₹{ngo.fundingAmount.toLocaleString()}
+      </p>
+      <p>
+        <strong>Commission (3%):</strong> ₹{commission}
+      </p>
       <div className="ngo-links">
         <a href={ngo.googleMaps} target="_blank" rel="noopener noreferrer">
           View on Google Maps
