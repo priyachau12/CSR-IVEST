@@ -1,0 +1,146 @@
+/* Navbar Styles */
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  padding: 1rem 1.5rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Logo */
+/* .navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+} */
+/* .logo-img {
+  width: 60px; 
+  height: auto;
+  display: block;
+} */
+
+
+/* Logo Section */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Spacing between logo and text */
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 50px; /* Adjust size */
+  height: 50px;
+  border-radius: 50%; /* Makes it round */
+  object-fit: cover; /* Ensures the image fits well */
+  border: 2px solid var(--white); /* Optional border */
+}
+
+/* Logo Text */
+.navbar-logo h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo:hover h3 {
+  color: rgba(255, 255, 255, 0.8); /* Slight color change on hover */
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--white);
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+.navbar-links a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Profile Icon */
+.profile-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.profile-svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--white);
+  transition: stroke 0.3s ease;
+}
+
+.profile-icon:hover .profile-svg {
+  stroke: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+
+  .navbar-links a {
+    text-align: center;
+    padding: 0.5rem;
+  }
+}

@@ -1,0 +1,105 @@
+.services {
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Single Row Layout */
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  overflow-x: auto; /* Enables horizontal scrolling if needed */
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.service {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 250px; /* Ensures a uniform width */
+  max-width: 300px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  white-space: normal;
+}
+
+.service:hover {
+  transform: scale(1.05);
+}
+
+.arrow {
+  width: 15px;
+  height: 15px;
+  background-color: #007bff;
+  transform: rotate(45deg);
+  position: absolute;
+  left: -7px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.service-box {
+  flex: 1;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.service-box h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .service-container {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap; /* Prevents wrapping */
+  }
+
+  .service {
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .service {
+    min-width: 250px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .services h2 {
+    font-size: 1.8rem;
+  }
+
+  .service-box h3 {
+    font-size: 1.3rem;
+  }
+}

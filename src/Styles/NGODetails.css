@@ -1,0 +1,39 @@
+.ngo-details-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  background: #ff4d4d;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: #cc0000;
+}
+
+.ngo-links {
+  margin-top: 15px;
+}
+
+.ngo-links a, .ngo-links button {
+  background: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.ngo-links a:hover, .ngo-links button:hover {
+  background: #0056b3;
+}
